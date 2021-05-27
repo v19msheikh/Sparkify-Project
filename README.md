@@ -5,7 +5,6 @@ The purpose of this repository is to demonstrate how we can use Spark to anticip
 
 We use a tiny portion of Sparkify's log data to try to forecast churn.
 
-File Structure
 ## Getting Started
 
 Instructions below will help you setup your local machine to run the copy of this project.
