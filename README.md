@@ -31,18 +31,17 @@ You can run the notebook in local mode on a local computer as well as on a clust
   - README.md
   - LICENSE
 
-## Data Exploration & Preprocessing
+## Data Exploration & Preprocessing & Feature Generation
 
 You can find details for the following steps in sparkify.ipynb :
 
-## Feature Generation
-
-[ gender, songs, listened_singers_per_user, thumbs_Up, thumbs_Down]
-
 ## Postprocessing
-pyspark.ml stringIndexer (creates indexes for categorical variables), VectorAssembler (merges numerical features into a vector) and pipeline is used.
 
-## Modelling and Metrics 
+pyspark.ml 
+- stringIndexer (creates indexes for categorical variables), 
+- VectorAssembler (merges numerical features into a vector) and pipeline is used.
+
+## Modelling
 
 Logistic Regression, Random Forest Classifier  are experimented.
 
@@ -59,6 +58,12 @@ Because the fraction of users who churned is tiny, and this potentially skew the
 On the test set, we compare the accuracy and F1 score of various classification models (LogisticRegression, RandomForestClassifier). After that, we use a CrossValidator to fine-tune a logistic regression model using the GridSearch algorithm on three folds, with accuracy as the optimization metric.
 Because the coefficients of the logistic regression are easily interpretable, we chose to adjust it.
 
+
+## Improvment
+
+The use of a larger dataset and deployment on a cluster would benefit this investigation. Grid search is a computationally intensive operation, but with additional resources and time, a more thorough search over a bigger dataset and hyperparameter space might be carried out to fine-tune the model and presumably enhance overall accuracy.
+
+Finally, several A/B tests could be built up to investigate the model's findings, particularly the mitigation actions done as a result. One option is to identify users who are likely to churn, divide them into a control and treatment group, provide them a "churn-mitigating" treatment, and compare their churn rates using statistical hypothesis testing.
 
 ## Author
 
