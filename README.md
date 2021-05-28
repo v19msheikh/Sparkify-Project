@@ -1,6 +1,11 @@
 # Sparkify-Project
  Capstone Project of Udacity Data Scientist Nanodegree
  
+ ![](sparkify.png)
+ 
+ ## View a detailed analysis report on Blooger
+[![Blogger](Screenshots/Blogger-Logo.png)](https://mhassandatascience.blogspot.com/2021/05/sparkify-project-capstone-project-of.html)
+ 
 The purpose of this repository is to demonstrate how we can use Spark to anticipate customer churn. Despite the fact that we are using Spark in local mode and that the data may theoretically be processed on a single machine, we process the data and build the model with Spark to construct an extendable framework. If the code is put on a cluster, the research performed here might scale to much larger datasets.
 
 We use a tiny portion of Sparkify's log data to try to forecast churn.
